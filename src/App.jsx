@@ -51,7 +51,7 @@ function App() {
     }
   }
 
-const precioFinal = todos.reduce((acc,el) => acc + Number(el.precio),0)
+const precioFinal = todos.reduce((acc,el) => acc + Number(el.precio * el.cantidad),0)
 
   return (
     <Box w="100vw" 
